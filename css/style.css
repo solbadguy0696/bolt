@@ -152,11 +152,11 @@ main {
   margin-right: 100px;
 }
 
-.works__work__list--li:first-child,.works__work__list--li:nth-child(2),.works__work__list--li:nth-child(3) {
+.works__work__list--li:nth-child(-n+3) {
   margin-bottom: 80px;
 }
 
-.works__work__list--li:nth-child(3),.works__work__list--li:nth-child(6) {
+.works__work__list--li:nth-child(3n) {
   margin-right: 0;
 }
 
@@ -279,7 +279,7 @@ footer {
     margin-right: 0;
   }
 
-  .works__work__list--li:first-child,.works__work__list--li:nth-child(2) {
+  .works__work__list--li:nth-child(-n+2) {
     margin-bottom: 0;
   }
 
@@ -359,11 +359,11 @@ footer {
     display: block;
   }
 
-  .header-title {
+  .head-title {
     padding: 160px 0 130px;
   }
 
-  .header-title__main {
+  .head-title__main {
     font-size: 80px;
   }
 
