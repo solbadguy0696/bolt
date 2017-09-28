@@ -3,8 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
+    <meta name="descrippion" content="This is my portfolio site.">
+    <meta name="keyword" content="bolt, bootstrap, portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
     <title>Bolt - Free Bootstrap 3 Theme</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/base.css">
@@ -12,7 +14,104 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- ヘッダー -->
+    <header>
+        <div class="header-bar">
+            <div class="header-bar-contents">
+                <i class="fa fa-bolt header-bar__logo" aria-hidden="true"></i>
+                <nav class="header-bar__nav">
+                    <button class="header-bar__nav__contact">Contact</button>
+                    <i class="fa fa-reorder header-bar__nav__contact--close btn-close" id="nav-toggle"></i>
+                    <ul class="header-bar__nav__list close" id="nav-list">
+                        <li class="header-bar__nav__list--li">Contact</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <section class="header-title">
+            <h1 class="header-title__main">Bolt Theme</h1>
+            <h2 class="header-title__sub subtitle">FREE BOOTSTRAP THEMES</h2>
+        </section>
+    </header>
 
-<script src="js/script.js"></script>
+    <!-- メインコンテンツ -->
+    <main>
+        <!-- WHAT WE CAN DO? -->
+        <article class="cando">
+            <img class="cando__img" src="img/iphone.png" alt="">
+            <div class="cando__com">
+                <h2 class="cando-title subtitle">WHAT WE CAN DO?</h2>
+                <p class="cando-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>Lorem Ipsum has been the industry's standard dummy text ever since the<br>1500s, when an unknown printer took a galley of type and scrambled it to<br>
+                make a type specimen book.</p>
+            <div>
+        </article>
+
+        <!-- OUR LATEST WORK -->
+        <section class="works">
+            <h2 class="works-title subtitle">OUR LATEST WORK</h2>
+            <div class="works__work">
+                <ul class="works__work__list--top">
+                    <li class="works__work__list--li"><img src="img/01.jpg" alt=""></li>
+                    <li class="works__work__list--li"><img src="img/02.jpg" alt=""></li>
+                    <li class="works__work__list--li"><img src="img/03.jpg" alt=""></li>
+                </ul>
+                <ul class="works__work__list--bottom">
+                    <li class="works__work__list--li"><img src="img/04.jpg" alt=""></li>
+                    <li class="works__work__list--li"><img src="img/05.jpg" alt=""></li>
+                    <li class="works__work__list--li"><img src="img/06.jpg" alt=""></li>
+                </ul>
+            </div>
+            <div class="works__com">
+                <p class="works__com-p">Lorem Ipsum is simply dummy text of the printing and typesetting<br>industry. Lorem Ipsum has been the industry's standard dummy<br>text ever.</p>
+                <button class="works__com-button">Email Me!</button>
+            </div>
+        </section>
+
+        <!-- OUR SKILLS -->
+        <figure class="skills">
+            <h2 class="skills-title subtitle">OUR SKILLS</h2>
+            <ul class="skills__list">
+                <li class="skills__list__skill">
+                    <img src="img/circle_01.png" alt="">
+                    <p class="skills__list__skill-p">JavaScript</p>
+                </li>
+                <li class="skills__list__skill">
+                    <img src="img/circle_02.png" alt="">
+                    <p class="skills__list__skill-p">Bootstrap</p>
+                </li>
+                <li class="skills__list__skill">
+                    <img src="img/circle_03.png" alt="">
+                    <p class="skills__list__skill-p">WordPress</p>
+                </li>
+                <li class="skills__list__skill">
+                    <img src="img/circle_04.png" alt="">
+                    <p class="skills__list__skill-p">Photoshop</p>
+                </li>
+            </ul>
+        </figure>
+
+        <!-- SNSナビゲーション -->
+        <nav class="sns-nav">
+            <ul class="sns-list">
+                <li class="sns-list__sns">
+                    <i class="fa fa-facebook" aria-hidden="true"></i></li>
+                <li class="sns-list__sns">
+                    <i class="fa fa-dribbble "></i></li>
+                <li class="sns-list__sns">
+                    <i class="fa fa-twitter" aria-hidden="true"></i></li>
+                <li class="sns-list__sns">
+                    <i class="fa fa-envelope" aria-hidden="true"></i></li>
+            </ul>
+        </div>
+    </main>
+
+
+    <!-- フッター -->
+
+    <footer>
+        <small><p class="footer-box">Crafted with <i class="fa fa-heart "></i>  by BlackTie.co.</p></small>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

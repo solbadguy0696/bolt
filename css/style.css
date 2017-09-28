@@ -1,0 +1,356 @@
+@charset 'UTF-8';
+
+/* 全体に共通する変更
+-------------------------------------*/
+body {
+  color: #333;
+  background-color: #f2f2f2;
+}
+
+.subtitle {
+  font-family: raleway;
+  font-size: 24px;
+}
+
+/* ヘッダー
+-------------------------------------*/
+
+/*-- ヘッダーバー --*/
+.header-bar {
+  background-color: #fff;
+  padding: 15px;
+}
+
+.header-bar-contents {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-bar-contents:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.header-bar__logo {
+  font-size: 40px;
+  float: left;
+}
+
+.header-bar__nav {
+  float: right;
+}
+
+.header-bar__nav__contact {
+  color: #fff;
+  background-color: #74cfae;
+  font-size: 12px;
+  border: none;
+  padding: 14px 12px;
+  cursor: pointer;
+}
+
+.header-bar__nav__contact:hover {
+  color: #74cfae;
+  background-color: #fff;
+}
+
+.header-bar__nav__contact--close {
+  display: none;
+}
+
+.header-bar__nav__list {
+  display: none;
+}
+
+/*-- Bolt Theme メインタイトル --*/
+.header-title {
+  padding: 250px 0;
+  text-align: center;
+}
+
+.header-title__main {
+  font-size: 90px;
+  font-weight: 700;
+  color: #74cfae;
+  font-family: lato;
+  margin-bottom: 20px;
+}
+
+.header-title__sub {
+  font-size: 30px;
+  color: #c0c0c0;
+}
+
+/* メインコンテンツ
+-------------------------------------*/
+.main-box {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/*-- WHAT WE CANDO? メイン --*/
+.cando {
+  color: #fff;
+  background-color: #74cfae;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.cando__img {
+  display: inline-block;
+  margin: 0 70px 0 90px;
+}
+
+.cando__com {
+  display: inline-block;
+  vertical-align: 90px;
+}
+
+.cando-title {
+  margin-bottom: 35px;
+}
+
+.cando-p {
+  font-size: 20px;
+  line-height: 25px;
+}
+
+/*-- OUR LATEST WORK メイン --*/
+.works {
+  padding: 60px 0 70px 0;
+  text-align: center;
+}
+
+.works-title {
+  margin-bottom: 40px;
+}
+
+.works__work {
+  margin: 0 auto 90px;
+}
+
+.works__work__list--top {
+  margin-bottom: 80px;
+}
+
+.works__work__list--li {
+  display: inline-block;
+  margin-right: 100px;
+}
+
+.works__work__list--li:nth-child(3) {
+  margin-right: 0;
+}
+
+.works__work__list--li:nth-child(6) {
+  margin-right: 0;
+}
+
+.works__work__list--li img {
+  opacity: 0.7;
+  vertical-align: bottom;
+}
+
+.works__work__list--li img:hover {
+  opacity: 1;
+}
+
+.works__com-p {
+  display: inline-block;
+  line-height: 25px;
+  margin-right: 90px;
+}
+
+.works__com-button {
+  font-size: 12px;
+  color: #fff;
+  background-color: #74cfae;
+  padding: 14px 20px;
+  border: none;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.works__com-button:hover {
+  color: #74cfae;
+  background-color: #fff;
+}
+
+/*-- OUR SKILLS メイン --*/
+.skills {
+  color: #fff;
+  background-color: #4e4e4e;
+  padding: 70px 0 100px;
+  text-align: center;
+}
+
+.skills-title {
+  margin-bottom: 50px;
+}
+
+.skills__list__skill {
+  display: inline-block;
+  margin-right: 180px;
+}
+
+.skills__list__skill:last-child {
+  margin-right: 0;
+}
+
+.skills__list__skill-p {
+  font-size: 16px;
+  line-height: 25px;
+}
+
+/*-- SNSICON メイン --*/
+.sns-nav {
+  padding: 200px 0;
+  text-align: center;
+}
+
+.sns-list__sns {
+  display: inline-block;
+  font-size: 50px;
+  color: #74cfae;
+  width: 185px;
+  padding: 30px 0;
+}
+
+.sns-list__sns:hover {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+/* フッター
+-------------------------------------*/
+footer {
+  color: #fff;
+  background-color: #74cfae;
+}
+
+.footer-box {
+  max-width: 1200px;
+  padding: 20px 15px 25px;
+  margin: 0 auto;
+  text-align: right;
+}
+
+/* タブレット
+----------------------------------------------*/
+@media screen and (max-width: 1199px) {
+  .cando {
+    padding-bottom: 25px;
+  }
+
+  .cando__com {
+    display: block;
+    margin: 20px 0 25px;
+    vertical-align: 0;
+  }
+
+  .cando__img {
+    margin: 0;
+  }
+
+  .works__work {
+    margin: 0 auto 80px;
+  }
+
+  .works__work__list--li {
+    display: block;
+    margin-right: 0;
+  }
+
+  .works__com-p {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .skills__list__skill {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 88px;
+  }
+}
+
+/* スマートフォン
+----------------------------------------------*/
+@media screen and (max-width: 766px) {
+  .header-bar__nav__contact {
+    display: none;
+  }
+
+  .header-bar__nav__contact--close {
+    display: inline-block;
+    color: #c0c0c0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    transform: scale(1.5, 1.2);
+    cursor: pointer;
+  }
+
+  .header-bar__nav__list {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    color: #fff;
+    background-color: #fff;
+    width: 100%;
+    height: 70px;
+    border-top: solid 1px #ddd;
+    text-align: left;
+  }
+
+  .header-bar__nav__list--li {
+    position: relative;
+    top: 10px;
+    left: 0;
+    color: #fff;
+    background-color: #74cfae;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .header-bar__nav__list--li:hover {
+    color: #74cfae;
+    background-color: #fff;
+  }
+
+  .list-close {
+    display: none;
+  }
+
+  .list-open {
+    display: block;
+  }
+
+  .header-title {
+    padding: 160px 0 130px;
+  }
+
+  .header-title__main {
+    font-size: 80px;
+  }
+
+  .works__work {
+    padding: 10px;
+  }
+
+  .works__work__list--li img {
+    width: 100%;
+  }
+
+  .sns-nav {
+    padding: 50px 15px;
+  }
+
+  .sns-list__sns {
+    display: block;
+    width: 100%;
+    padding: 30px 0;
+  }
+}
